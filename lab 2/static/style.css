@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Myriad Pro Regular', sans-serif;
+    src: url(fonts/Myriad-Pro-Regular/Myriad-Pro-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Myriad Pro Regular', sans-serif;
+}
+#container{
+   width: 1280px;
+   margin: 0 auto;
+}
+#title{
+    font-size: 5em;
+    margin: 30px 0 30px 0;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+}
+nav{
+    background-color: #35444f;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.nav-links{
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+    font-size: 1.5em;
+    border: 1px solid transparent;
+}
+.nav-links:hover{
+    background-color: #222f3a;
+    border-right: 1px solid #818181;
+    border-left: 1px solid #818181;
+    cursor: default;
+}
+main{
+    display: flow-root;
+    position: relative;
+}
+#side{
+    height: 100%;
+    display: flow-root;
+    width: 30%;
+    float: left;
+    position: absolute;
+}
+#side-menu{
+    font-size: 27px;
+    border: 1px solid #818181;
+    color: #495863;
+    overflow: hidden;
+}
+.side-menu-links{
+    padding:20px;
+    display: inline-block;
+    width: 100%;
+}
+.side-menu-links:hover{
+    background-color: #dbdbdb;
+    cursor: default; 
+}
+#content{
+    float: right;
+    width: 65%;
+}
+#picture{
+    height:600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    transition: transform 0.25s;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.text{
+    font-size: 18px;
+    margin: 40px 20px 40px 20px;
+}
+footer{
+    padding:0 20px 0 20px;
+    background-color: #b4b7ba;
+}
+.footer-links{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    padding: 20px 0 20px 0;
+    font-size: 26px;
+}
+.footer-links:hover{
+    border-bottom: 2px solid #3181a6;
+    padding-bottom: 3px;
+    color: #3181a6;
+    cursor: default;
+}
+#copyright{
+    float: right;
+    padding:20px 10px 20px 10px;
+    font-size: 26px;
+}
