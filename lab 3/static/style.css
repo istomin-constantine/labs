@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Verdana', sans-serif;
+    src: url(fonts/Verdana/Verdana.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+body{
+    background-image: url(../img/cyberpunk-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    display: flow-root;
+    margin: 45px 0 45px 0;
+}
+.container{
+    width: 1060px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    color:white;
+}
+.logo-text.p1,.logo-text.p2{
+    font-weight: bold;
+    display: block;
+}
+.logo-text.p1{
+    font-size: 29px;
+    line-height: 29px;
+}
+.logo-text.p2{
+    font-size: 18px;
+    line-height: 18px;
+}
+.logo-img{
+    float: left;
+    width: 46px;
+    height: 46px;
+    margin-right:1em;
+    background-image: url("../img/logo-white.png");
+    background-size: cover;
+}
+.logo:hover > .logo-img{
+    background-image: url("../img/logo-orange.png");
+    background-size: cover;
+}
+.logo:hover{
+    color: #f26522;
+}
+.logo-text-container{
+    float: right;
+}
+.contacts{
+    font-size: 18px;
+    float: right;
+    color:white;
+}
+.row{
+    display: flow-root;
+    position: relative;
+}
+.card-left, .card-middle, .card-right{
+    width: 310px;
+    height: 260px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.card-left{
+    float: left;
+}
+.card-middle{
+    margin:0 65px; 
+}
+.card-right{
+    float: right;
+}
+.card-img{
+    height:205px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card-img::after{
+    content: "";
+    position: absolute;
+    height: 102%;
+    width: 101%;
+    background-image: linear-gradient(135deg, white, black);
+    z-index: -1; 
+}
+.card-text-container{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.card-text{
+    color:#ffffff;
+    display: inline-block;
+}
+.card-img:hover .card-details{
+    height: 64px;
+}
+.card-text:hover{
+    color:#f26522;
+}
+.card-details-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+.card-details{
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    background-color: #f26522;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card-details-text{
+    box-sizing: border-box;
+    height: 34px;
+    margin: 15px 20px;
+    position: relative;
+}
+.from{
+    color:#ffffff;
+    font-size: 10px;
+    font-weight: normal;
+    float: left;
+}
+.price{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    float: left;
+    clear: left;    
+}
+.view-details{
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+}
+.view-details::after{
+    position: absolute;
+    content: "\f105";
+    font: normal normal normal 14px FontAwesome;
+    color: #ffffff;
+    margin-left:20px;
+}
+footer{
+    font-size:12px;
+    text-align: center;
+    color:white;
+    padding: 25px;
+}
