@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Verdana', sans-serif;
+    src: url(fonts/Verdana/Verdana.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    /* outline: 1px solid white; */
+}
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.45);
+    position: relative;
+    height: 64px;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.logo{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 20px 81px;
+    transition: 0.25s;
+}
+.logo:hover{
+    color: #3cb878;
+    transition: 0.25s;
+}
+.header-container{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.welcome-message{
+    margin: 20px 81px 20px 0px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+.header-span{
+    color:#3cb878;
+}
+.header-span::after, .log-in::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #3cb878;
+    transition: width .3s;
+}
+.header-span:hover::after, .log-in:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.sprite-container{
+    float:left;
+    display: flex;
+    gap:20px;
+    margin: 20px;
+}
+.calendar{
+    height: 19px;
+    width: 19px;
+    background: url(../img/sprites.png);
+    background-position: -61px -10px;
+    transition: 0.25s;
+}
+.calendar:hover{
+    background-position: -100px -10px;
+    transition: 0.25s;
+}
+.forum{
+    height: 20px;
+    width: 28px;
+    background: url(../img/sprites.png);
+    background-position: -264px -10px;
+    transition: 0.25s;
+}
+.forum:hover{
+    background-position: -312px -10px;
+    transition: 0.25s;
+}
+.journey{
+    height: 20px;
+    width: 20px;
+    background: url(../img/sprites.png);
+    background-position: -139px -10px;
+    transition: 0.25s;
+}
+.journey:hover{
+    background-position: -179px -10px;
+    transition: 0.25s;
+}
+.vert-line{
+    border-left:1px solid rgba(0, 0, 0, 0.25);
+}
+main{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 64px);
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 440px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding:20px 60px;
+    box-shadow: 0px 0px 12px 15px rgba(0, 0, 0, 0.1)
+}
+.sign-up{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+.sign-up::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: -60px;
+    background-color: #3cb878;
+    position: absolute;
+    z-index: 0;
+}
+.log-in{
+    text-decoration: none;
+    color: #3cb878;
+    float: right;
+    display: block;
+}
+.sm-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.sm-button{
+    padding: 15px 40px 15px 15px;
+    width: 50%;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+.sm-button p{
+    float:right;
+    display: block;
+    cursor: default;
+    user-select: none;
+}
+.facebook-button{
+    background-color: #305db8;
+    transition: 0.25s;
+}
+.facebook-button:hover{
+    background-color: #264b96;
+    transition: 0.25s;
+}
+.facebook-button.sm-icon{
+    background-position: -23px -10px;
+    width: 20px;
+}
+.google-button{
+    background-color: #df4a32;
+    transition: 0.25s;
+}
+.google-button:hover{
+    background-color: #c3412c;
+    transition: 0.25s;
+}
+.google-button.sm-icon{
+    width: 30px;
+    background-position: -217px -8px;
+}
+.sm-icon{
+    height:20px;
+    background: url(../img/sprites.png);
+}
+.or-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.or-section p{
+    margin: 10px 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.horiz-line{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+.form input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-top:20px;
+    border-radius: 2px;
+    border:1px solid rgba(0, 0, 0, 0.15);
+}
+.form input:focus{
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: 1px solid transparent;
+}
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    margin:20px 0;
+}
+.container input {
+    display: none;
+}
+.checkmark {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border:1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.container input:checked ~ .checkmark {
+    background-image: url(../img/checkbox.png);
+}
+.container .label {
+    margin-left:10px;
+}
+.button{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: #3cb878;
+    border-radius: 5px;
+    color:#ffffff;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.button:hover{
+    background-color: #329a65;
+    transition: 0.25s;
+}
