@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #131516;
+}
+p{
+    color: #fff;
+}
+.container{
+    display: flex;
+    height: 25px;
+    gap:5px;
+    align-items: center;
+    margin-top:30px;
+}
+.container input{
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    color:#000;
+    position: relative;
+}
+.price-container{
+    position: relative;
+    width: 200px;
+}
+#price-span{
+    border: 1px solid cyan;
+    border-radius: 10px;
+    position: absolute;
+    top: -25px;
+    display: none;
+    align-items: center;
+    gap: 5px;
+    padding: 0 3px;
+}
+#span-button{
+    border: 1px solid red;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    line-height: 12px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+#span-button:hover{
+    cursor: pointer;
+}
+#error{
+    position: absolute;
+    bottom: -20px;
+}
